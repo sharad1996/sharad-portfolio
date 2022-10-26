@@ -1,6 +1,5 @@
 import Empplan from "../assets/clients/client-empplan.jpeg";
 import Koo from "../assets/clients/client-koo.jpeg";
-import CarouselSlider from "react-carousel-slider";
 
 function Testimonials({ testimonialData }) {
 
@@ -12,8 +11,8 @@ function Testimonials({ testimonialData }) {
           <p>{testimonialData.description}</p>
         </div>
 
-        <div id="carouselExample1" className="carousel slide z-depth-1-half" data-ride="carousel">
-          <div className="carousel-inner">
+        <div style={{ display: 'flex', justifyContent: 'center' }} id="carouselExample1" className="carousel slide z-depth-1-half" data-ride="carousel">
+          <div style={{ width: '75%' }} className="carousel-inner">
             <div className="carousel-item active">
               <div
                 className="testimonial-item"
@@ -22,24 +21,24 @@ function Testimonials({ testimonialData }) {
               >
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  {testimonialData.feedBack}
+                  {testimonialData.feedBacks[0].description}
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src={Empplan} className="testimonial-img" alt="" />
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <img src={Koo} className="testimonial-img" alt="" />
+                <h3>{testimonialData.feedBacks[0].clientName}</h3>
+                <h4>{testimonialData.feedBacks[0].clientDesignation}</h4>
               </div>
             </div>
             <div className="carousel-item">
               <div className="testimonial-item" data-aos="fade-up">
                 <p>
                   <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                  {testimonialData.feedBack}
+                  {testimonialData.feedBacks[1].description}
                   <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src={Koo} className="testimonial-img" alt="" />
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <img src={Empplan} className="testimonial-img" alt="" />
+                <h3>{testimonialData.feedBacks[1].clientName}</h3>
+                <h4>{testimonialData.feedBacks[1].clientDesignation}</h4>
               </div>
             </div>
           </div>

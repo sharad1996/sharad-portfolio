@@ -11,19 +11,13 @@ function Header({ ProfileDetails }) {
             <a href="index.html">{ProfileDetails.name}</a>
           </h1>
           <div className="social-links mt-3 text-center">
-            <a href="#" className="twitter">
+            <a href={ProfileDetails.twitter} className="twitter">
               <i className="bx bxl-twitter"></i>
             </a>
-            <a href="#" className="facebook">
-              <i className="bx bxl-facebook"></i>
-            </a>
-            <a href="#" className="instagram">
-              <i className="bx bxl-instagram"></i>
-            </a>
-            <a href="#" className="google-plus">
+            <a href={ProfileDetails.skype} className="google-plus">
               <i className="bx bxl-skype"></i>
             </a>
-            <a href="#" className="linkedin">
+            <a href={ProfileDetails.linkedIn} className="linkedin">
               <i className="bx bxl-linkedin"></i>
             </a>
           </div>

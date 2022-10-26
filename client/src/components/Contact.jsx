@@ -12,10 +12,11 @@ function Contact({ contactData }) {
   const [contact, setContact] = useState("");
   const [message, setMessage] = useState("");
 
-  const API = "http://localhost:4000";
+  const API = `http://${window.location.hostname}:4000`;
 
   const formDetail = {
     subject: "Sending Mail",
+    email: email,
     html: `
     <div style="border: 1px solid #dadce0; width: 500px; border-radius :8px; padding: 40px 20px; text-align: center; margin: auto">
     <p style="font-size: 20px">${name}<br /></p> 
@@ -82,12 +83,7 @@ function Contact({ contactData }) {
                 <p>{contactData.call}</p>
               </div>
 
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-                frameborder="0"
-                style={{ border: 0, width: "100", height: "290px" }}
-                allowfullscreen
-              ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7363.700696005232!2d75.88434609599112!3d22.659367640260967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1666765228950!5m2!1sen!2sin" width="400" height="250"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
             </div>
           </div>
 

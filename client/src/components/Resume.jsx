@@ -42,32 +42,24 @@ function Resume({ resumeData }) {
           </div>
           <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3 className="resume-title">Professional Experience</h3>
-            <div className="resume-item">
-              <h4>{resumeData.experience.profile}</h4>
-              <h5>{resumeData.experience.year}</h5>
-              <p>
-                <em>{resumeData.experience.project} </em>
-              </p>
-              <ul>
-                <li>{resumeData.experience.companyOne}</li>
-                <li>{resumeData.experience.companyTwo}</li>
-                <li>{resumeData.experience.companyThree}</li>
-                <li>{resumeData.experience.companyFour}</li>
-              </ul>
-            </div>
-            <div className="resume-item">
-              <h4>{resumeData.experience.profile}</h4>
-              <h5>{resumeData.experience.year}</h5>
-              <p>
-                <em>{resumeData.experience.project} </em>
-              </p>
-              <ul>
-                <li>{resumeData.experience.companyOne}</li>
-                <li>{resumeData.experience.companyTwo}</li>
-                <li>{resumeData.experience.companyThree}</li>
-                <li>{resumeData.experience.companyFour}</li>
-              </ul>
-            </div>
+            {resumeData.experience?.map((item) => {
+              return (
+                <div className="resume-item">
+                  <h4>{item?.profile}</h4>
+                  <h5>{item?.year}</h5>
+                  <p>
+                    <em>{item?.project} </em>
+                  </p>
+                  <ul>
+                    {item?.companyOne && <li>{item?.companyOne}</li>}
+                    {item?.companyTwo && <li>{item?.companyTwo}</li>}
+                    {item?.companyThree && <li>{item?.companyThree}</li>}
+                    {item?.companyFour && <li>{item?.companyFour}</li>}
+                  </ul>
+                </div>
+              )
+            })}
+
           </div>
         </div>
       </div>

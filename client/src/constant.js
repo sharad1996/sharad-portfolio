@@ -19,24 +19,50 @@ const ResumeData = {
     collegeDetail:
       "",
   },
-  experience: {
-    profile: "SENIOR WEB DEVELOPER",
-    year: "2019- Present",
-    project: "Koo India",
-    companyOne:
-      "Lead in the design, development, and implementation of the application, layout, and production communication materials",
-    companyTwo:
-      "Identified web-based user interaction and developed highly responsive user interface components via react concepts.",
-    companyThree:
-      "Monitored and improved front-end performance and documented application changes and worked on updates.",
-    companyFour:
-      "Developed the latest user-facing features using React.js and built reusable components & front-end libraries for future use.",
-  },
+  experience: [
+    {
+      profile: "SENIOR WEB DEVELOPER",
+      year: "2021- Present",
+      project: "Koo India (Contract)",
+      companyOne:
+        "Lead in the design, development, and implementation of the application, layout, and production communication materials",
+      companyTwo:
+        "Identified web-based user interaction and developed highly responsive user interface components via react concepts.",
+      companyThree:
+        "Monitored and improved front-end performance and documented application changes and worked on updates.",
+      companyFour:
+        "Developed the latest user-facing features using React.js and built reusable components & front-end libraries for future use.",
+    },
+    {
+      profile: "Full Stack DEVELOPER",
+      year: "2021- 2021",
+      project: "Empplan (Contract)",
+      companyOne:
+        "Main responsibility of mine is to create new features and taken care of existing bugs and functionalities.",
+    },
+    {
+      profile: "Software DEVELOPER",
+      year: "2017- 2020",
+      project: "Bestpeers",
+      companyOne:
+        "Determine the structure and design of web pages based on user requirements and balanced functionals & aesthetic designs.",
+      companyTwo:
+        "Creating the features to enhance the user experience while ensuring that the web design is optimized for smartphones .",
+      companyThree:
+        "Employed a variety of languages such as HTML & CSS to write & create user-friendly web pages.",
+      companyFour:
+        "Managed brand consistency and enhanced the company's website by adding more features and functionality.",
+    }
+  ],
 };
 
 const ProfileDetails = {
   name: "Sharad Kumar",
   skills: "Coder, Developer, Freelancer, Contractor",
+  twitter: 'https://twitter.com/sharadw59698768',
+  facebook: 'https://www.facebook.com/viraj.wankhede.35',
+  linkedIn: 'https://www.linkedin.com/in/sharad-w-78a277146/',
+  skype: 'https://join.skype.com/invite/f3GMloy88JsW'
 };
 
 const SkillsData = {
@@ -47,13 +73,26 @@ const SkillsData = {
 const TestimonialData = {
   description:
     "I have worked with multiple clients on different projects. What they think about me personally and professionaly you can find below:",
-  feedBack:
-    "It has been a pleasure working with Sharad. In the ~9 months time, I have seen him improve significantly as a developer and his contributions to the team has increased the productivity of the team. Working in a startup environment requires working extended hours, sacrificing weekends for work, meeting steep deadlines and a lot of patience to fix all the issues raised at the last moment before a feature release and Sharad is built for such a Job. Picks some of the complex tasks as well and manages to stick to the strictest deadlines. He has an excellent work ethics and good communication.",
+  feedBacks: [
+    {
+      clientName: "Bhargav Arya",
+      clientDesignation: "Product Manager",
+      description:
+      "It has been a pleasure working with Sharad. In the ~12 months time, I have seen him improve significantly as a developer and his contributions to the team has increased the productivity of the team. Working in a startup environment requires working extended hours, sacrificing weekends for work, meeting steep deadlines and a lot of patience to fix all the issues raised at the last moment before a feature release and Sharad is built for such a Job. Picks some of the complex tasks as well and manages to stick to the strictest deadlines. He has an excellent work ethics and good communication.",
+    },
+    {
+      clientName: "Patrick Schlender",
+      clientDesignation: "Director (EMPPLAN)",
+      description:
+      "Sharad was a developer that we brought on to complete some integration tasks for Empplan. He showed us that he is very knowledgeable and maintained constant communication as he moved through his tasks. I was impressed with his ability to keep us updated throughout the entire process, and he showed true leadership in his ability to take a task, and complete it above and beyond the standards. I look forward to working with developers like Sharad. We will definitely use Sharad again in the future. He's a true asset to any team.",
+    }
+  ]
+  
 };
 
 const PortfolioData = {
   description:
-    "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.",
+    "I have worked on multiple projects for multiple clients. I have attached some screenshots and link of the projects for better understanding of my work. You can found some overview of that projects below",
 };
 
 const ServicesData = {
@@ -85,10 +124,10 @@ const FactsData = {
 
 const ContactData = {
   description:
-    "Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.",
-  location: "A108 Adam Street, New York, NY 535022",
-  email: "info@example.com",
-  call: "+1 5589 55488 55s",
+    "",
+  location: "Indore, India",
+  email: "sharadwankhade23@gmail.com",
+  call: "+91-8109618802",
   sentMessage: "Your message has been sent. Thank you!",
 };
 

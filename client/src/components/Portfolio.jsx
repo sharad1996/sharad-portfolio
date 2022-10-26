@@ -1,5 +1,6 @@
 import Empplan from '../assets/empplan/empplan-login.png'
 import Koo from '../assets/koo/koo-home.png'
+import Costco from '../assets/costco/costco-home.png'
 
 function Portfolio({ PortfolioData }) {
   return (
@@ -8,19 +9,6 @@ function Portfolio({ PortfolioData }) {
         <div className="section-title">
           <h2>Portfolio</h2>
           <p>{PortfolioData.description}</p>
-        </div>
-
-        <div className="row" data-aos="fade-up">
-          <div className="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" className="filter-active">
-                All
-              </li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
         </div>
 
         <div
@@ -73,6 +61,30 @@ function Portfolio({ PortfolioData }) {
               </div>
             </div>
           </div>
+
+          <div className="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div className="portfolio-wrap">
+              <img
+                src={Costco}
+                className="img-fluid"
+                alt=""
+              />
+              <div className="portfolio-links">
+                <a
+                  href="https://www.costco.com/"
+                  data-gallery="portfolioGallery"
+                  className="portfolio-lightbox"
+                  title="Web 3"
+                >
+                  <i className="bx bx-plus"></i>
+                </a>
+                <a href="portfolio-details.html" title="More Details">
+                  <i className="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ var nodemailer = require("nodemailer");
 const app = express();
 const port = process.env.PORT || 4000;
 var cors = require("cors");
+require('dotenv').config();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -22,10 +23,11 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post("/text_mail", (req, res) => {
-  const { to, subject, text, html } = req.body;
+  const { email, subject, html } = req.body;
+  console.log(req.body, 'email', process.env.RECIVER_EMAIL);
   const mailData = {
-    from: "ankit.guptamic@gmail.com", // sender address
-    to: process.env.NODE_MAILER_USER, // list of receivers
+    from: email, // sender address
+    to: process.env.RECIVER_EMAIL, // list of receivers
     subject,
     // text,
     html,
