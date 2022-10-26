@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
 const app = express();
 const port = process.env.PORT || 4000;
-const config = require("./config");
 var cors = require("cors");
 
 app.use(bodyParser.json());
@@ -17,8 +16,8 @@ app.get("/api", (req, res) => {
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "ankit.guptamic@gmail.com",
-    pass: "okeyiszfczpygdbb",
+    user: process.env.NODE_MAILER_USER,
+    pass: process.env.NODE_MAILER_PASS,
   },
 });
 
@@ -26,7 +25,7 @@ app.post("/text_mail", (req, res) => {
   const { to, subject, text, html } = req.body;
   const mailData = {
     from: "ankit.guptamic@gmail.com", // sender address
-    to: "agupta@technomatz.com", // list of receivers
+    to: process.env.NODE_MAILER_USER, // list of receivers
     subject,
     // text,
     html,
@@ -38,7 +37,7 @@ app.post("/text_mail", (req, res) => {
     } else {
       console.log("Email sent: " + info.response);
       res.status(200).send({
-        message: "Thank you for registration. My team will contact you",
+        message: "Thank you for reaching out to me. I will contact you",
         message_id: "info.messageId",
       });
     }
