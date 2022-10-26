@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "concurrently \"nodemon index.js\" \"npm run client\"",
     "client": "cd client && npm start",
-    "dev": "concurrently \"nodemon index.js\" \"npm run client\""
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
