@@ -1,4 +1,5 @@
 const express = require("express");
+const path = require('path');
 const bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
 const app = express();
@@ -10,8 +11,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
+// Have Node serve the files for our built React app
+app.use(express.static(path.resolve(__dirname, './client/build')));
+
 app.get("/api", (req, res) => {
   res.status(200).send({ message: "Hello World" });
+});
+
+// All other GET requests not handled before will return our React app
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './client/build', 'index.html'));
 });
 
 const transporter = nodemailer.createTransport({

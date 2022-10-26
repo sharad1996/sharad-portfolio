@@ -6,7 +6,8 @@
   "scripts": {
     "start": "concurrently \"nodemon index.js\" \"npm run client\"",
     "client": "cd client && npm start",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build": "cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",

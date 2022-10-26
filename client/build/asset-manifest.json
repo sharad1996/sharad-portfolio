@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0aedfd9e.css",
+    "main.js": "/static/js/main.3015b919.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/koo-home.png": "/static/media/koo-home.d3eaedb3cd1b0634d3ff.png",
+    "static/media/boxicons.svg": "/static/media/boxicons.0153fb5e5b5f697b4bcc.svg",
+    "static/media/costco-home.png": "/static/media/costco-home.45a1cb4b277e9c9e2f07.png",
+    "static/media/boxicons.eot": "/static/media/boxicons.21f7c5dd64d88e1fc666.eot",
+    "static/media/boxicons.woff": "/static/media/boxicons.02aa967c5bfb9489501a.woff",
+    "static/media/boxicons.ttf": "/static/media/boxicons.ad0ddae357213656b3e6.ttf",
+    "static/media/empplan-login.png": "/static/media/empplan-login.34c6cee29b84678b612c.png",
+    "static/media/profile.jpg": "/static/media/profile.cdb425f8c30063a031d7.jpg",
+    "static/media/boxicons.woff2": "/static/media/boxicons.0335b427967c56248ea6.woff2",
+    "static/media/client-koo.jpeg": "/static/media/client-koo.1553a69e8963f573f363.jpeg",
+    "static/media/hero.jpg": "/static/media/hero.b4fc6ad7f10d1c8643ff.jpg",
+    "static/media/client-empplan.jpeg": "/static/media/client-empplan.64740b3ae7382871e2da.jpeg",
+    "static/media/bg-1.jpg": "/static/media/bg-1.c7429a2f5b62682e6bf7.jpg",
+    "index.html": "/index.html",
+    "main.0aedfd9e.css.map": "/static/css/main.0aedfd9e.css.map",
+    "main.3015b919.js.map": "/static/js/main.3015b919.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0aedfd9e.css",
+    "static/js/main.3015b919.js"
+  ]
+}
