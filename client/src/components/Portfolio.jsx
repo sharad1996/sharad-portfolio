@@ -20,6 +20,7 @@ function Portfolio({ PortfolioData }) {
             <div className="portfolio-wrap">
               <img
                 src={Empplan}
+                style={{ height: '210px', width: '350px' }}
                 className="img-fluid"
                 alt=""
               />
@@ -43,6 +44,7 @@ function Portfolio({ PortfolioData }) {
             <div className="portfolio-wrap">
               <img
                 src={Koo}
+                style={{ height: '210px', width: '350px' }}
                 className="img-fluid"
                 alt=""
               />
@@ -66,6 +68,7 @@ function Portfolio({ PortfolioData }) {
             <div className="portfolio-wrap">
               <img
                 src={Costco}
+                style={{ height: '210px', width: '350px' }}
                 className="img-fluid"
                 alt=""
               />

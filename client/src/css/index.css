@@ -571,6 +571,10 @@ section {
   margin-right: 0;
 }
 
+.portfolio-wrap {
+  height: 250px;
+}
+
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
