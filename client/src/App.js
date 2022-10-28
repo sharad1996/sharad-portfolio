@@ -8,6 +8,7 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
+import Snow from "./components/Snow";
 // import useScript from './hooks/useScript';
 import {
   AboutData,
@@ -26,6 +27,7 @@ function App() {
   return (
     <div className="App">
       <Header ProfileDetails={ProfileDetails} />
+      <Snow />
       <Hero ProfileDetails={ProfileDetails} />
       <main id="main">
         <About aboutData={AboutData} />
